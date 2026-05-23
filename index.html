@@ -454,14 +454,14 @@ function flipLanguage() {
       document.getElementById('streak-num').textContent = streak;
     }
     // Open settings immediately
-    window.location.href = 'App-prefs:root=General&path=LANGUAGE';
+    window.location.href = "prefs:root=INTERNATIONAL";
     // Show hint
     const hint = document.getElementById('settings-hint');
     hint.classList.add('show');
     setTimeout(() => hint.classList.remove('show'), 3000);
   } else {
     // Going back to English — open settings so they can switch back
-    window.location.href = 'App-prefs:root=General&path=LANGUAGE';
+    window.location.href = "prefs:root=INTERNATIONAL";
     const hint = document.getElementById('settings-hint');
     hint.textContent = 'Opening iPhone Language Settings…';
     hint.classList.add('show');
